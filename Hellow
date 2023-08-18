@@ -1,0 +1,6 @@
+print("Hellow world")
+f=open("hello.txt","w")
+h="Hellow"
+q="world"
+f.write(h+"-"+q+"\n")
+f.close()
