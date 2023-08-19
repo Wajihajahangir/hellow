@@ -1,0 +1,22 @@
+list=[]
+print('\t\t******TO DO LIST APPLICATION********\n')
+while(1):
+ print("1.Add task\n2.Delete task\n3.View Task\n4.Exist\n")
+ print("Enter your choice : ")
+ a=int(input())
+ if a==1:
+  b=input("Enter task : ")
+  list.append(b)
+  print("Task successfully added.......")
+ if a==2:
+  c=input("Enter task to remove : ")
+  if c in list:
+    list.remove(c)
+    print("Task successfully deleted.......")
+  else:
+   print("Task not found Try again......")
+ if a==3:
+  print(list)
+ if a==4:
+  print("Thanks Good Job!!.......")
+  exit()
